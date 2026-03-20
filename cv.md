@@ -1,6 +1,7 @@
 # Konstantin Shcherban
 **Software Developer**
 
+![Me](photo.jpg)
 ## Contacts
 * LinkedIn: [shcherban](https://www.linkedin.com/in/shcherban/?locale=en_US)
 * Telegram: [konstantin_shcherban](https://t.me/konstantin_shcherban)
