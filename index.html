@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Konstantin Shcherban</h1>
+        <p class="subheader">Software Developer</p>        
+        <div class="photo-and-contacts">    
+            <img src="images/photo.jpg" alt="Me">
+            <article class="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    <li>Email: <a href="mailto:konstantin.shcherban@gmail.com">konstantin.shcherban@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/shcherban/?locale=en_US">shcherban</a></li>
+                    <li>Telegram: <a href="https://t.me/konstantin_shcherban">konstantin_shcherban</a></li>
+                    <li>X: <a href="https://twitter.com/shcherban_en">shcherban_en</a></li>
+                    <li>Discord: Konstantin (@shcherban)</li>
+                </ul>  
+            </article>    
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Myself</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code-examples">Code Examples</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#english-level">English Level</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+        <section id="about">
+            <h2>About Myself</h2>
+            I'm a C# developer mostly experienced in desktop applications for Windows, but intended to focus on web. I have back experience in web development with PHP and JavaScript. My immediate plan is to refresh and strengthen my front-end skills.
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Desktop application development (C#, WPF)</li>
+                <li>Web development (HTML, CSS/Sass, JavaScript, PHP, jQuery, Vue.js, Leaflet.js, Firebase, Gulp)</li>
+                <li>Database management (SQL)</li>
+            </ul>
+        </section>
+
+        <section id="code-examples">
+            <h2>Code Examples</h2>
+            <p>
+                <a href="https://www.codewars.com/kata/523f5d21c841566fde000009" target="_blank">Array.diff KATA from CODEWARS (6 kyu)</a>:
+                Implement a function that computes the difference between two lists. The function should remove all occurrences of elements from the first list (a) that are present in the second list (b). The order of elements in the first list should be preserved in the result.
+            </p>
+            <h3>C#</h3>
+            <pre>
+            <code>using System.Linq;
+
+public class Kata
+{
+    public static int[] ArrayDiff(int[] a, int[] b)
+    {
+        var query =
+        from x in a
+        where !b.Contains(x)
+        select x;
+        return query.ToArray();
+    }
+}  
+            </code>
+            </pre>
+            <h3>JavaScript</h3>
+            <pre>
+            <code>function arrayDiff(a, b) {
+    let res = Array.from(a);
+    b.forEach( (nB) => {
+        res = res.filter( (nR) => nR !== nB );
+    });
+    return res;
+}
+            </code> 
+            </pre>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+
+            <h3 class="work-period">August 2021 — currently</h3>
+            <div class="work-position">
+                Programmer | Moscow Jewelry Factory
+            </div>
+            <div class="work-description">
+                Developed a POS solution for jewelry shop (C#, WPF, SQL), integrated tax-free functionality (C#, JavaScript), developed an application for interchanging with government control system for precious metals and precious stones market (С#, SQL).
+            </div>
+
+            <h3 class="work-period">May 2018 — august 2021</h3>
+            <div class="work-position">
+                Engineer/programmer | SPE Salyut JSC
+            </div>
+            <div class="work-description">
+                Development of web application for river information services (HTML, CSS/Sass, JavaScript, PHP, jQuery, Vue.js, Leaflet.js, Firebase, Gulp).
+            </div>
+
+            <h3 class="work-period">April 2017 — april 2018</h3>
+            <div class="work-position">
+                Engineer | Krylov State Research Centre
+            </div>
+            <div class="work-description">
+                Prototyping, design and development of desktop and mobile applications for maritime information systems. (Photoshop, Inkscape, C#, WPF).
+            </div>
+
+            <h3 class="work-period">December 2012 — march 2017</h3>
+            <div class="work-position">
+                Software developer | CSRI Kurs JSC
+            </div>
+            <div class="work-description">
+                Working on software components of information system for skippers on river transport (C#, WPF). Have developed simulator of vessel GPS-receiver for testing (C++).
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <h3>Moscow Aviation Institute (graduated in 2004)</h3>
+            <p>Engineer's degree, Informatics and control in engineering systems</p>
+        </section>
+
+        <section id="english-level">
+            <h2>English Level</h2>
+            <p>
+                Intermediate (<a href="https://skysmart-core.skyeng.ru/general/v1/certificates/366092/d09f341d0c1dffb162e58d1757d91155023b54510d49a732b7a0698bf8a08b46?source=lesson">Skyeng Certificate</a>)
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Konstantin Shcherban, 2026</p>
+        <p class="footer-links">
+            <a href="https://github.com/shcherban"><img src="images/github_logo.svg" width="32" height="32" alt="GitHub Logo"></a>
+            <a href="https://rs.school/courses/javascript-preschool-ru"><img src="images/rs-school-logo.svg" alt="RS School Logo" class="rsschool-logo" width="100" height="30"></a>
+        </p>
+    </footer>
+</body>
+</html>
