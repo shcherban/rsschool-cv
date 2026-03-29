@@ -1,0 +1,61 @@
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subheader {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    font-variant: small-caps;
+}
+
+.contacts {
+    background-color: #cfe2ec;
+    padding: 0 15px;
+    flex-grow: 1;
+}
+
+.photo-and-contacts {
+    margin-top: 3em;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.work-period {
+    color:rgb(100, 100, 100);
+}
+
+h1 {
+    color:#4d4d4d
+}
+
+h2 {
+    margin-top: 2em;
+    color:#1e3f52
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 10px;
+    display: block;
+    white-space: pre-wrap;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 3em;
+    text-align: center;
+    color: #666;
+    border-top: #1e3f52 1px solid;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: unset;
+}
